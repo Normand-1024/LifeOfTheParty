@@ -1,0 +1,81 @@
+{"fileName":"actions.json","actions":[
+  {
+    "name": "SINGING",
+    "conditions": [],
+    "leadTo": ["singingFail", "singingSuccess"]
+  },
+  {
+    "name": "singingFail",
+    "conditions": [{
+      "category": "Character_Attributes",
+      "type": "singing_skill",
+      "first": "initiator",
+      "value": 30,
+      "operator": "<"
+    }],
+    "influenceRules": [],
+    "effects": [{
+      "category": "socialStatusLabel",
+      "types": "baaaad_singing",
+      "first": "initiator",
+      "value": true
+    },
+    {
+      "category": "Character_Attributes",
+      "types": "fame",
+      "first": "initiator",
+      "operator": "+",
+      "value": 5
+    }]
+  },
+  {
+    "name": "singingSuccess",
+    "conditions": [{
+      "category": "Character_Attributes",
+      "type": "singing_skill",
+      "first": "initiator",
+      "value": 29,
+      "operator": ">"
+    }],
+    "influenceRules": [],
+    "effects": [{
+      "category": "socialStatusLabel",
+      "types": "nice_singing",
+      "first": "initiator",
+      "value": true
+    },
+    {
+      "category": "Character_Attributes",
+      "types": "fame",
+      "first": "initiator",
+      "operator": "+",
+      "value": 5
+    }]
+  },
+  {
+    "name" : "RAISEFEELING",
+    "intent" : {
+      "category" : "Feeling_Category",
+      "type"  : "feeling",
+      "intentType" : true,
+      "first" : "initiator",
+      "second" : "responder"
+    },
+    "conditions" : [],
+    "influenceRules" : [],
+    "leadsTo" : ["Talking"]
+  },
+  {
+    "name" : "Talking",
+    "conditions": [],
+    "influenceRules": [],
+    "effects": [{
+      "category": "Feeling_Category",
+      "types": "feeling",
+      "first": "responder",
+      "second": "initiator",
+      "operator": "+",
+      "value": 10
+    }]
+  }
+]}

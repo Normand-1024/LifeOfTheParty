@@ -1,0 +1,54 @@
+{
+	"schema": [
+		{
+			"actionable": true,
+			"directionType": "directed",
+			"isBoolean": false,
+			"cloneEachTimeStep": true,
+			"category": "Feeling_Category",
+			"types": [
+				"feeling"
+			],
+			"defaultValue": 0,
+			"maxValue": 100,
+			"minValue": -100
+		},
+		{
+			"actionable": true,
+			"directionType": "undirected",
+			"isBoolean": false,
+			"cloneEachTimeStep": true,
+			"category": "Character_Attributes",
+			"types": [
+				"fame",
+				"singing_skill"
+			],
+			"defaultValue": 0,
+			"maxValue": 100,
+			"minValue": 0
+		},
+		{
+			"actionable": false,
+			"directionType": "undirected",
+			"isBoolean": true,
+			"cloneEachTimeStep": true,
+			"category": "socialStatusLabel",
+			"types": [
+				"nice_singing",
+				"baaaad_singing"
+			],
+			"defaultValue": false
+		},
+		{
+			"actionable": false,
+			"directionType": "undirected",
+			"isBoolean": true,
+			"cloneEachTimeStep": true,
+			"category": "CharacterLabel",
+			"types": [
+				"anyone"
+			],
+			"defaultValue": false
+		}
+	]
+}

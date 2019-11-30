@@ -1,0 +1,26 @@
+{"history":[
+	{
+		"pos": 0,
+		"data": [{
+			"category" : "CharacterLabel",
+			"type" : "anyone",
+			"first" : "Jesse",
+			"value" : true
+				},{
+			"category" : "CharacterLabel",
+			"type" : "anyone",
+			"first" : "Rowan",
+			"value" : true
+				},{
+			"category" : "Character_Attributes",
+			"type" : "singing_skill",
+			"first" : "Jesse",
+			"value" : 50
+			},{
+			"category" : "Character_Attributes",
+			"type" : "singing_skill",
+			"first" : "Rowan",
+			"value" : 30
+			}
+		]}
+]}
