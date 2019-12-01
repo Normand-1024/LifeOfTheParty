@@ -7,14 +7,14 @@
 			"conditions": [
 				{
 					"category": "feelingCategory",
-					"type": "feeling",
+					"type": "bonding",
 					"first": "x",
 					"second": "y",
 					"operator": ">",
 					"value": -1
 				},{
 					"category": "feelingCategory",
-					"type": "feeling",
+					"type": "bonding",
 					"first": "x",
 					"second": "y",
 					"operator": "<",
@@ -24,7 +24,7 @@
 			"effects": [
 				{
 					"category": "feelingCategory",
-					"type": "feeling",
+					"type": "bonding",
 					"first": "x",
 					"second": "y",
 					"weight": 3,
@@ -40,7 +40,7 @@
 			"conditions": [
 				{
 					"category": "feelingCategory",
-					"type": "feeling",
+					"type": "bonding",
 					"first": "x",
 					"second": "y",
 					"value": 30,
@@ -80,7 +80,7 @@
 			"conditions": [
 				{
 					"category": "feelingCategory",
-					"type": "feeling",
+					"type": "bonding",
 					"first": "x",
 					"second": "y",
 					"value": 50,
@@ -129,7 +129,7 @@
 			"effects": [
 				{
 					"category": "feelingCategory",
-					"type": "feeling",
+					"type": "bonding",
 					"first": "x",
 					"second": "y",
 					"weight": 3,
@@ -155,7 +155,7 @@
 			"effects": [
 				{
 					"category": "feelingCategory",
-					"type": "feeling",
+					"type": "bonding",
 					"first": "x",
 					"second": "y",
 					"weight": 3,
