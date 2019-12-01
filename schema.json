@@ -5,7 +5,7 @@
 			"directionType": "directed",
 			"isBoolean": false,
 			"cloneEachTimeStep": true,
-			"category": "Feeling_Category",
+			"category": "feelingCategory",
 			"types": [
 				"feeling"
 			],
@@ -18,10 +18,10 @@
 			"directionType": "undirected",
 			"isBoolean": false,
 			"cloneEachTimeStep": true,
-			"category": "Character_Attributes",
+			"category": "charAttributes",
 			"types": [
 				"fame",
-				"singing_skill"
+				"drunkenness"
 			],
 			"defaultValue": 0,
 			"maxValue": 100,
@@ -32,10 +32,10 @@
 			"directionType": "undirected",
 			"isBoolean": true,
 			"cloneEachTimeStep": true,
-			"category": "socialStatusLabel",
+			"duration": 3,
+			"category": "interactionLabel",
 			"types": [
-				"nice_singing",
-				"baaaad_singing"
+				"interacted"
 			],
 			"defaultValue": false
 		},
@@ -44,7 +44,7 @@
 			"directionType": "undirected",
 			"isBoolean": true,
 			"cloneEachTimeStep": true,
-			"category": "CharacterLabel",
+			"category": "charLabel",
 			"types": [
 				"anyone"
 			],

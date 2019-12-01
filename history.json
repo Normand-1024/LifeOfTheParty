@@ -2,25 +2,25 @@
 	{
 		"pos": 0,
 		"data": [{
-			"category" : "CharacterLabel",
+			"category" : "charLabel",
 			"type" : "anyone",
 			"first" : "Jesse",
 			"value" : true
 				},{
-			"category" : "CharacterLabel",
+			"category" : "charLabel",
 			"type" : "anyone",
 			"first" : "Rowan",
 			"value" : true
 				},{
-			"category" : "Character_Attributes",
-			"type" : "singing_skill",
+			"category" : "charAttributes",
+			"type" : "drunkenness",
 			"first" : "Jesse",
-			"value" : 50
+			"value" : 0
 			},{
-			"category" : "Character_Attributes",
-			"type" : "singing_skill",
+			"category" : "charAttributes",
+			"type" : "drunkenness",
 			"first" : "Rowan",
-			"value" : 30
+			"value" : 0
 			}
 		]}
 ]}

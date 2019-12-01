@@ -3,20 +3,23 @@
 	"type": "volition",
 	"rules": [
 		{
-			"name": "Everyone Wants to Increase Fame",
+			"name": "Non-friends Want to be Friends",
 			"conditions": [
 				{
-					"category": "CharacterLabel",
-					"type": "anyone",
+					"category": "feelingCategory",
+					"type": "feeling",
 					"first": "x",
-					"value": true
+					"second": "y",
+					"operator": ">",
+					"value": -1
 				}
 			],
 			"effects": [
 				{
-					"category": "Character_Attributes",
-					"type": "fame",
+					"category": "feelingCategory",
+					"type": "feeling",
 					"first": "x",
+					"second": "y",
 					"weight": 3,
 					"intentType": true
 				}
@@ -24,6 +27,137 @@
 			"origin": "volitionRules",
 			"id": "volitionRules_2",
 			"isActive": true
+		},
+		{
+			"name": "Friends Drink Together",
+			"conditions": [
+				{
+					"category": "feelingCategory",
+					"type": "feeling",
+					"first": "x",
+					"second": "y",
+					"value": 30,
+					"operator": ">"
+				},
+				{
+					"category": "charAttributes",
+					"type": "drunkenness",
+					"first": "y",
+					"value": 30,
+					"operator": ">"
+				},
+				{
+					"category": "charAttributes",
+					"type": "drunkenness",
+					"first": "x",
+					"value": 30,
+					"operator": "<"
+				}
+			],
+			"effects": [
+				{
+					"category": "charAttributes",
+					"type": "drunkenness",
+					"first": "x",
+					"weight": 3,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_3",
+			"type": "volition"
+		},
+
+		{
+			"name": "BFFs Get Drunk Together",
+			"conditions": [
+				{
+					"category": "feelingCategory",
+					"type": "feeling",
+					"first": "x",
+					"second": "y",
+					"value": 50,
+					"operator": ">"
+				},
+				{
+					"category": "charAttributes",
+					"type": "drunkenness",
+					"first": "y",
+					"value": 70,
+					"operator": ">"
+				},
+				{
+					"category": "charAttributes",
+					"type": "drunkenness",
+					"first": "x",
+					"value": 70,
+					"operator": "<"
+				}
+			],
+			"effects": [
+				{
+					"category": "charAttributes",
+					"type": "drunkenness",
+					"first": "x",
+					"weight": 6,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_3",
+			"type": "volition"
+		},
+
+		{
+			"name": "I'm dizzy and I like you more",
+			"conditions": [
+				{
+					"category": "charAttributes",
+					"type": "drunkenness",
+					"first": "x",
+					"value": 30,
+					"operator": ">"
+				}
+			],
+			"effects": [
+				{
+					"category": "feelingCategory",
+					"type": "feeling",
+					"first": "x",
+					"second": "y",
+					"weight": 3,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_4",
+			"type": "volition"
+		},
+
+		{
+			"name": "I'm drunk and I like you even more",
+			"conditions": [
+				{
+					"category": "charAttributes",
+					"type": "drunkenness",
+					"first": "x",
+					"value": 70,
+					"operator": ">"
+				}
+			],
+			"effects": [
+				{
+					"category": "feelingCategory",
+					"type": "feeling",
+					"first": "x",
+					"second": "y",
+					"weight": 3,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_5",
+			"type": "volition"
 		}
 	]
 }
