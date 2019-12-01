@@ -1,7 +1,7 @@
 {"fileName":"actions.json","actions":[
 
   {
-    "name": "RAISEDUNKENNESS",
+    "name": "raiseDrunkenness",
     "intent": {
       "category": "charAttributes",
       "type": "drunkenness",
@@ -10,15 +10,15 @@
     },
     "conditions": [],
     "influenceRules": [],
-    "leadsTo": ["DrinkAlcohol"]
+    "leadsTo": ["drinkAlcohol"]
   },
   {
-    "name" : "DrinkAlcohol",
+    "name" : "drinkAlcohol",
     "conditions": [],
     "influenceRules": [],
     "effects": [{
       "category": "charAttributes",
-      "types": "drunkenness",
+      "type": "drunkenness",
       "first": "initiator",
       "operator": "+",
       "value": 20
@@ -26,7 +26,7 @@
   },
 
   {
-    "name" : "RAISEFEELING",
+    "name" : "raiseFeeling",
     "intent" : {
       "category" : "feelingCategory",
       "type"  : "bonding",
@@ -36,22 +36,22 @@
     },
     "conditions" : [],
     "influenceRules" : [],
-    "leadsTo" : ["Talking"]
+    "leadsTo" : ["talk"]
   },
   {
-    "name" : "Talking",
+    "name" : "talk",
     "conditions": [],
     "influenceRules": [],
     "effects": [{
       "category": "feelingCategory",
-      "types": "bonding",
+      "type": "bonding",
       "first": "responder",
       "second": "initiator",
       "operator": "+",
       "value": 20
     },{
       "category": "feelingCategory",
-      "types": "bonding",
+      "type": "bonding",
       "first": "initiator",
       "second": "responder",
       "operator": "+",

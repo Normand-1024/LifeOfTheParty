@@ -3,7 +3,7 @@
 	"type": "volition",
 	"rules": [
 		{
-			"name": "Non-friends Want to be Friends",
+			"name": "Non-friends want to be friends",
 			"conditions": [
 				{
 					"category": "feelingCategory",
@@ -36,7 +36,7 @@
 			"isActive": true
 		},
 		{
-			"name": "Friends Drink Together",
+			"name": "Friends tend to drink together",
 			"conditions": [
 				{
 					"category": "feelingCategory",
@@ -76,7 +76,7 @@
 		},
 
 		{
-			"name": "BFFs Get Drunk Together",
+			"name": "BFFs will get drunk together",
 			"conditions": [
 				{
 					"category": "feelingCategory",
@@ -116,7 +116,7 @@
 		},
 
 		{
-			"name": "I'm dizzy and I like you more",
+			"name": "People like other people more if they're tipsy",
 			"conditions": [
 				{
 					"category": "charAttributes",
@@ -142,7 +142,7 @@
 		},
 
 		{
-			"name": "I'm drunk and I like you even more",
+			"name": "People like other people even more if they're drunk",
 			"conditions": [
 				{
 					"category": "charAttributes",
