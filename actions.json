@@ -49,6 +49,13 @@
       "second": "initiator",
       "operator": "+",
       "value": 10
+    },{
+      "category": "feelingCategory",
+      "types": "feeling",
+      "first": "initiator",
+      "second": "responder",
+      "operator": "+",
+      "value": 10
     }]
   }
 ]}

@@ -12,6 +12,13 @@
 					"second": "y",
 					"operator": ">",
 					"value": -1
+				},{
+					"category": "feelingCategory",
+					"type": "feeling",
+					"first": "x",
+					"second": "y",
+					"operator": "<",
+					"value": 30
 				}
 			],
 			"effects": [

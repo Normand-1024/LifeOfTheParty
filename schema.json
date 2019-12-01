@@ -7,7 +7,7 @@
 			"cloneEachTimeStep": true,
 			"category": "feelingCategory",
 			"types": [
-				"feeling"
+				"bonding"
 			],
 			"defaultValue": 0,
 			"maxValue": 100,
@@ -33,9 +33,10 @@
 			"isBoolean": true,
 			"cloneEachTimeStep": true,
 			"duration": 3,
-			"category": "interactionLabel",
+			"category": "statusLabel",
 			"types": [
-				"interacted"
+				"interacted",
+				"above-the-clouds"
 			],
 			"defaultValue": false
 		},
