@@ -4,7 +4,27 @@
 		"data": [{
 			"category" : "charLabel",
 			"type" : "anyone",
+			"first" : "Jesse",
+			"value" : true
+				},{
+			"category" : "charLabel",
+			"type" : "anyone",
 			"first" : "Rowan",
+			"value" : true
+				},{
+			"category" : "charLabel",
+			"type" : "anyone",
+			"first" : "Chad",
+			"value" : true
+				},{
+			"category" : "charLabel",
+			"type" : "anyone",
+			"first" : "Stacy",
+			"value" : true
+				},{
+			"category" : "charLabel",
+			"type" : "anyone",
+			"first" : "Alan",
 			"value" : true
 				},{
 			"category" : "charLabel",
@@ -16,10 +36,25 @@
 			"type" : "drunkenness",
 			"first" : "Jesse",
 			"value" : 0
-			},{
+				},{
 			"category" : "charAttributes",
 			"type" : "drunkenness",
 			"first" : "Rowan",
+			"value" : 0
+				},{
+			"category" : "charAttributes",
+			"type" : "drunkenness",
+			"first" : "Chad",
+			"value" : 0
+				},{
+			"category" : "charAttributes",
+			"type" : "drunkenness",
+			"first" : "Stacy",
+			"value" : 0
+				},{
+			"category" : "charAttributes",
+			"type" : "drunkenness",
+			"first" : "Alan",
 			"value" : 0
 			}
 		]}
