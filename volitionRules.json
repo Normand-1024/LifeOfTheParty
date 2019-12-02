@@ -12,7 +12,8 @@
 					"second": "y",
 					"operator": ">",
 					"value": -1
-				},{
+				},
+				{
 					"category": "feelingCategory",
 					"type": "bonding",
 					"first": "x",
@@ -74,7 +75,6 @@
 			"id": "volitionRules_3",
 			"type": "volition"
 		},
-
 		{
 			"name": "BFFs will get drunk together",
 			"conditions": [
@@ -111,10 +111,9 @@
 				}
 			],
 			"origin": "volitionRules",
-			"id": "volitionRules_3",
+			"id": "volitionRules_4",
 			"type": "volition"
 		},
-
 		{
 			"name": "People like other people more if they're tipsy",
 			"conditions": [
@@ -137,10 +136,9 @@
 				}
 			],
 			"origin": "volitionRules",
-			"id": "volitionRules_4",
+			"id": "volitionRules_5",
 			"type": "volition"
 		},
-
 		{
 			"name": "People like other people even more if they're drunk",
 			"conditions": [
@@ -163,7 +161,197 @@
 				}
 			],
 			"origin": "volitionRules",
-			"id": "volitionRules_5",
+			"id": "volitionRules_6",
+			"type": "volition"
+		},
+		{
+			"name": "People want to drink if persuaded",
+			"conditions": [
+				{
+					"category": "statusLabel",
+					"type": "persuadedtodrink",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "charAttributes",
+					"type": "drunkenness",
+					"first": "someone",
+					"weight": 5,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_7",
+			"type": "volition"
+		},
+		{
+			"name": "People want to get high if persuaded",
+			"conditions": [
+				{
+					"category": "statusLabel",
+					"type": "persuadedtogethigh",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "charAttributes",
+					"type": "ondrug",
+					"first": "someone",
+					"weight": 10,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_8",
+			"type": "volition"
+		},
+		{
+			"name": "Jesse can persuade others to drink",
+			"conditions": [
+				{
+					"category": "charLabel",
+					"type": "jesse",
+					"first": "someone",
+					"value": true
+				},
+				{
+					"category": "charLabel",
+					"type": "anyone",
+					"first": "other",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "interactionRecord",
+					"type": "timespersuadedtodrink",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentType": true
+				},
+				{
+					"category": "interactionRecord",
+					"type": "timespersuadedtodrink",
+					"first": "other",
+					"second": "someone",
+					"weight": 5,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_9",
+			"type": "volition"
+		},
+		{
+			"name": "Jesse can persuade others to get high",
+			"conditions": [
+				{
+					"category": "charLabel",
+					"type": "jesse",
+					"first": "someone",
+					"value": true
+				},
+				{
+					"category": "charLabel",
+					"type": "anyone",
+					"first": "other",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "interactionRecord",
+					"type": "timespersuadedtododrug",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_10",
+			"type": "volition"
+		},
+		{
+			"name": "Jesse can drink",
+			"conditions": [
+				{
+					"category": "charLabel",
+					"type": "jesse",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "charAttributes",
+					"type": "drunkenness",
+					"first": "someone",
+					"weight": 5,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_11",
+			"type": "volition"
+		},
+		{
+			"name": "Jesse can do drug",
+			"conditions": [
+				{
+					"category": "charLabel",
+					"type": "jesse",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "charAttributes",
+					"type": "ondrug",
+					"first": "someone",
+					"weight": 5,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_12",
+			"type": "volition"
+		},
+		{
+			"name": "People on drug love everyone",
+			"conditions": [
+				{
+					"category": "statusLabel",
+					"type": "ondrug",
+					"first": "x",
+					"value": true
+				},
+				{
+					"category": "charLabel",
+					"type": "anyone",
+					"first": "y",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "feelingCategory",
+					"type": "bonding",
+					"first": "x",
+					"second": "y",
+					"weight": 10,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_16",
 			"type": "volition"
 		}
 	]

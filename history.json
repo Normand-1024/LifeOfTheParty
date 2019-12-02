@@ -4,12 +4,12 @@
 		"data": [{
 			"category" : "charLabel",
 			"type" : "anyone",
-			"first" : "Jesse",
+			"first" : "Rowan",
 			"value" : true
 				},{
 			"category" : "charLabel",
-			"type" : "anyone",
-			"first" : "Rowan",
+			"type" : "jesse",
+			"first" : "Jesse",
 			"value" : true
 				},{
 			"category" : "charAttributes",

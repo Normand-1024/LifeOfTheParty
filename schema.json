@@ -15,20 +15,20 @@
 		},
 		{
 			"actionable": true,
-			"directionType": "undirected",
+			"directionType": "directed",
 			"isBoolean": false,
 			"cloneEachTimeStep": true,
-			"category": "charAttributes",
+			"category": "interactionRecord",
 			"types": [
-				"fame",
-				"drunkenness"
+				"timespersuadedtododrug",
+				"timespersuadedtodrink"
 			],
 			"defaultValue": 0,
-			"maxValue": 100,
+			"maxValue": 5,
 			"minValue": 0
 		},
 		{
-			"actionable": false,
+			"actionable": true,
 			"directionType": "undirected",
 			"isBoolean": true,
 			"cloneEachTimeStep": true,
@@ -36,7 +36,9 @@
 			"category": "statusLabel",
 			"types": [
 				"interacted",
-				"above-the-clouds"
+				"ondrug",
+				"persuadedtodrink",
+				"persuadedtogethigh"
 			],
 			"defaultValue": false
 		},
@@ -47,9 +49,25 @@
 			"cloneEachTimeStep": true,
 			"category": "charLabel",
 			"types": [
-				"anyone"
+				"anyone",
+				"jesse"
 			],
 			"defaultValue": false
+		},
+		{
+			"actionable": true,
+			"directionType": "undirected",
+			"isBoolean": false,
+			"cloneEachTimeStep": true,
+			"category": "charAttributes",
+			"types": [
+				"fame",
+				"drunkenness",
+				"ondrug"
+			],
+			"defaultValue": 0,
+			"maxValue": 100,
+			"minValue": 0
 		}
 	]
 }
