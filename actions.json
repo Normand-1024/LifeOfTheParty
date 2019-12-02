@@ -93,7 +93,7 @@
     "name" : "PERSUADETODRINK",
     "intent" : {
       "category" : "interactionRecord",
-      "type"  : "timesPersuadedToDrink",
+      "type"  : "timespersuadedtodrink",
       "intentType" : true,
       "first" : "initiator",
       "second" : "responder"
@@ -108,11 +108,17 @@
     "influenceRules": [],
     "effects": [{
       "category": "interactionRecord",
-      "type": "timesPersuadedToDrink",
+      "type": "timespersuadedtodrink",
       "first": "initiator",
       "second": "responder",
       "operator": "+",
       "value": 1
+    },
+	{
+      "category": "statusLabel",
+      "type": "persuadedtodrink",
+      "first": "responder",
+      "value": true
     }]
   },
 
@@ -120,7 +126,7 @@
     "name" : "PERSUADETODODRUG",
     "intent" : {
       "category" : "interactionRecord",
-      "type"  : "timesPersuadedToDoDrug",
+      "type"  : "timespersuadedtododrug",
       "intentType" : true,
       "first" : "initiator",
       "second" : "responder"
@@ -135,11 +141,17 @@
     "influenceRules": [],
     "effects": [{
       "category": "interactionRecord",
-      "type": "timesPersuadedToDoDrug",
+      "type": "timespersuadedtododrug",
       "first": "initiator",
       "second": "responder",
       "operator": "+",
       "value": 1
+    },
+	{
+      "category": "statusLabel",
+      "type": "persuadedtogethigh",
+      "first": "responder",
+      "value": true
     }]
   }
 ]}
