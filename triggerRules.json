@@ -1,0 +1,35 @@
+{
+	"fileName": "TriggerRules",
+	"type": "trigger",
+	"rules": [
+		{
+			"name": "Drug's effect wades after some time",
+			"conditions": [
+				{
+					"category": "charAttributes",
+					"type": "ondrug",
+					"first": "x",
+					"value": 0,
+					"operator": ">"
+				},
+				{
+					"category": "statusLabel",
+					"type": "ondrug",
+					"first": "x",
+					"value": false
+				}
+			],
+			"effects": [
+				{
+					"category": "charAttributes",
+					"type": "ondrug",
+					"first": "x",
+					"value": 0
+				}
+			],
+			"origin": "TriggerRules",
+			"id": "triggerRules_1",
+			"type": "trigger"
+		}
+	]
+}

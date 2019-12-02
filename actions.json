@@ -1,7 +1,7 @@
 {"fileName":"actions.json","actions":[
 
   {
-    "name": "raiseDrunkenness",
+    "name": "RAISEDRUNKENNESS",
     "intent": {
       "category": "charAttributes",
       "type": "drunkenness",
@@ -26,7 +26,37 @@
   },
 
   {
-    "name" : "raiseFeeling",
+    "name": "GETHIGH",
+    "intent": {
+      "category": "charAttributes",
+      "type": "ondrug",
+      "intentType": true,
+      "first": "initiator"
+    },
+    "conditions": [],
+    "influenceRules": [],
+    "leadsTo": ["doDrug"]
+  },
+  {
+    "name" : "doDrug",
+    "conditions": [],
+    "influenceRules": [],
+    "effects": [{
+      "category": "statusLabel",
+      "type": "ondrug",
+      "first": "initiator",
+      "value": true
+    },{
+      "category": "charAttributes",
+      "type": "ondrug",
+      "first": "initiator",
+      "operator": "+",
+      "value": 1
+    }]
+  },
+
+  {
+    "name" : "RAISEFEELING",
     "intent" : {
       "category" : "feelingCategory",
       "type"  : "bonding",
@@ -56,6 +86,72 @@
       "second": "responder",
       "operator": "+",
       "value": 20
+    }]
+  },
+
+  {
+    "name" : "PERSUADETODRINK",
+    "intent" : {
+      "category" : "interactionRecord",
+      "type"  : "timespersuadedtodrink",
+      "intentType" : true,
+      "first" : "initiator",
+      "second" : "responder"
+    },
+    "conditions" : [],
+    "influenceRules" : [],
+    "leadsTo" : ["persuadeToDrink"]
+  },
+  {
+    "name" : "persuadeToDrink",
+    "conditions": [],
+    "influenceRules": [],
+    "effects": [{
+      "category": "interactionRecord",
+      "type": "timespersuadedtodrink",
+      "first": "initiator",
+      "second": "responder",
+      "operator": "+",
+      "value": 1
+    },
+	{
+      "category": "statusLabel",
+      "type": "persuadedtodrink",
+      "first": "responder",
+      "value": true
+    }]
+  },
+
+  {
+    "name" : "PERSUADETODODRUG",
+    "intent" : {
+      "category" : "interactionRecord",
+      "type"  : "timespersuadedtododrug",
+      "intentType" : true,
+      "first" : "initiator",
+      "second" : "responder"
+    },
+    "conditions" : [],
+    "influenceRules" : [],
+    "leadsTo" : ["persuadeToDoDrug"]
+  },
+  {
+    "name" : "persuadeToDoDrug",
+    "conditions": [],
+    "influenceRules": [],
+    "effects": [{
+      "category": "interactionRecord",
+      "type": "timespersuadedtododrug",
+      "first": "initiator",
+      "second": "responder",
+      "operator": "+",
+      "value": 1
+    },
+	{
+      "category": "statusLabel",
+      "type": "persuadedtogethigh",
+      "first": "responder",
+      "value": true
     }]
   }
 ]}
