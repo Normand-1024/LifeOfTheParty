@@ -3,7 +3,7 @@
 	"type": "volition",
 	"rules": [
 		{
-			"name": "Non-friends generally want to be friends",
+			"name": "Non-enemies generally want to be friends",
 			"conditions": [
 				{
 					"category": "feelingCategory",
@@ -12,14 +12,6 @@
 					"second": "y",
 					"operator": ">",
 					"value": -1
-				},
-				{
-					"category": "feelingCategory",
-					"type": "bonding",
-					"first": "x",
-					"second": "y",
-					"operator": "<",
-					"value": 30
 				}
 			],
 			"effects": [
