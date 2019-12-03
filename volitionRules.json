@@ -3,7 +3,7 @@
 	"type": "volition",
 	"rules": [
 		{
-			"name": "Non-friends want to be friends",
+			"name": "Non-friends generally want to be friends",
 			"conditions": [
 				{
 					"category": "feelingCategory",
@@ -76,7 +76,7 @@
 			"type": "volition"
 		},
 		{
-			"name": "BFFs will get drunk together",
+			"name": "BFFs will want to get drunk together",
 			"conditions": [
 				{
 					"category": "feelingCategory",
@@ -165,7 +165,7 @@
 			"type": "volition"
 		},
 		{
-			"name": "People want to drink if persuaded",
+			"name": "People want to drink more if persuaded",
 			"conditions": [
 				{
 					"category": "statusLabel",
@@ -188,7 +188,7 @@
 			"type": "volition"
 		},
 		{
-			"name": "People want to get high if persuaded",
+			"name": "People want to get high more if persuaded",
 			"conditions": [
 				{
 					"category": "statusLabel",
@@ -302,7 +302,7 @@
 			"type": "volition"
 		},
 		{
-			"name": "Jesse can do drug",
+			"name": "Jesse can do drugs",
 			"conditions": [
 				{
 					"category": "charLabel",
@@ -325,7 +325,7 @@
 			"type": "volition"
 		},
 		{
-			"name": "People on drug love everyone",
+			"name": "People on drugs will show more love towards everyone",
 			"conditions": [
 				{
 					"category": "statusLabel",
@@ -351,7 +351,7 @@
 				}
 			],
 			"origin": "volitionRules",
-			"id": "volitionRules_16",
+			"id": "volitionRules_13",
 			"type": "volition"
 		}
 	]

@@ -33,25 +33,27 @@
 			"type": "trigger"
 		},
 		{
-			"name": "If x is on drugs, they will be on drugs for some time",
+			"name": "New Trigger Rule",
 			"conditions": [
 				{
-					"category": "statusLabel",
-					"type": "ondrug",
+					"category": "feelingCategory",
+					"type": "bonding",
 					"first": "x",
-					"value": true
+					"second": "someone",
+					"value": 0
 				}
 			],
 			"effects": [
 				{
-					"category": "charAttributes",
-					"type": "ondrug",
+					"category": "feelingCategory",
+					"type": "bonding",
 					"first": "x",
-					"value": 3
+					"second": "someone",
+					"value": 0
 				}
 			],
 			"origin": "TriggerRules",
-			"id": "triggerRules_15",
+			"id": "triggerRules_14",
 			"type": "trigger"
 		}
 	]

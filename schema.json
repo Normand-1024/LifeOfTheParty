@@ -50,7 +50,11 @@
 			"category": "charLabel",
 			"types": [
 				"anyone",
-				"jesse"
+				"jesse",
+				"rowan",
+				"chad",
+				"stacy",
+				"alan"
 			],
 			"defaultValue": false
 		},
