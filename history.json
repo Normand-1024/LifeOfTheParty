@@ -32,6 +32,26 @@
 			"first" : "Jesse",
 			"value" : true
 				},{
+			"category" : "charLabel",
+			"type" : "rowan",
+			"first" : "Rowan",
+			"value" : true
+				},{
+			"category" : "charLabel",
+			"type" : "chad",
+			"first" : "Chad",
+			"value" : true
+				},{
+			"category" : "charLabel",
+			"type" : "stacy",
+			"first" : "Stacy",
+			"value" : true
+				},{
+			"category" : "charLabel",
+			"type" : "alan",
+			"first" : "Alan",
+			"value" : true
+				},{
 			"category" : "charAttributes",
 			"type" : "drunkenness",
 			"first" : "Jesse",
