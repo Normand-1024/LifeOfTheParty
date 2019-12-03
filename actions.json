@@ -66,10 +66,10 @@
     },
     "conditions" : [],
     "influenceRules" : [],
-    "leadsTo" : ["talk"]
+    "leadsTo" : ["compliment"]
   },
   {
-    "name" : "talk",
+    "name" : "compliment",
     "conditions": [],
     "influenceRules": [],
     "effects": [{
