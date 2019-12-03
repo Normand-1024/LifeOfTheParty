@@ -67,7 +67,7 @@
 					"category": "charAttributes",
 					"type": "drunkenness",
 					"first": "x",
-					"weight": 3,
+					"weight": 5,
 					"intentType": true
 				}
 			],
@@ -106,7 +106,7 @@
 					"category": "charAttributes",
 					"type": "drunkenness",
 					"first": "x",
-					"weight": 6,
+					"weight": 7,
 					"intentType": true
 				}
 			],
@@ -389,7 +389,7 @@
 				}
 			],
 			"origin": "volitionRules",
-			"id": "volitionRules_15",
+			"id": "volitionRules_14",
 			"type": "volition"
 		}
 	]

@@ -100,11 +100,18 @@
     },
     "conditions" : [],
     "influenceRules" : [],
-    "leadsTo" : ["persuadeToDrink"]
+    "leadsTo" : ["persuadeToDrinkSuccess", "persuadeToDrinkFail"]
   },
   {
-    "name" : "persuadeToDrink",
-    "conditions": [],
+    "name" : "persuadeToDrinkSuccess",
+    "conditions": [{
+    	"category": "feelingCategory",
+    	"type": "bonding",
+    	"first": "initiator",
+    	"second": "responder",
+    	"operator": ">",
+    	"value": 19
+    }],
     "influenceRules": [],
     "effects": [{
       "category": "interactionRecord",
@@ -121,7 +128,26 @@
       "value": true
     }]
   },
-
+  {
+  	"name" : "persuadeToDrinkFail",
+    "conditions": [{
+    	"category": "feelingCategory",
+    	"type": "bonding",
+    	"first": "initiator",
+    	"second": "responder",
+    	"operator": "<",
+    	"value": 20
+    }],
+    "influenceRules": [],
+    "effects": [{
+      "category": "interactionRecord",
+      "type": "timespersuadedtodrink",
+      "first": "initiator",
+      "second": "responder",
+      "operator": "+",
+      "value": 1
+    }]
+  },
   {
     "name" : "PERSUADETODODRUG",
     "intent" : {
@@ -133,11 +159,18 @@
     },
     "conditions" : [],
     "influenceRules" : [],
-    "leadsTo" : ["persuadeToDoDrug"]
+    "leadsTo" : ["persuadeToDoDrugSuccess", "persuadeToDoDrugFail"]
   },
   {
-    "name" : "persuadeToDoDrug",
-    "conditions": [],
+    "name" : "persuadeToDoDrugSuccess",
+    "conditions": [{
+    	"category": "feelingCategory",
+    	"type": "bonding",
+    	"first": "initiator",
+    	"second": "responder",
+    	"operator": ">",
+    	"value": 39
+    }],
     "influenceRules": [],
     "effects": [{
       "category": "interactionRecord",
@@ -152,6 +185,26 @@
       "type": "persuadedtogethigh",
       "first": "responder",
       "value": true
+    }]
+  },
+  {
+    "name" : "persuadeToDoDrugFail",
+    "conditions": [{
+    	"category": "feelingCategory",
+    	"type": "bonding",
+    	"first": "initiator",
+    	"second": "responder",
+    	"operator": "<",
+    	"value": 40
+    }],
+    "influenceRules": [],
+    "effects": [{
+      "category": "interactionRecord",
+      "type": "timespersuadedtododrug",
+      "first": "initiator",
+      "second": "responder",
+      "operator": "+",
+      "value": 1
     }]
   }
 ]}
