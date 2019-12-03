@@ -234,14 +234,6 @@
 					"second": "other",
 					"weight": 5,
 					"intentType": true
-				},
-				{
-					"category": "interactionRecord",
-					"type": "timespersuadedtodrink",
-					"first": "other",
-					"second": "someone",
-					"weight": 5,
-					"intentType": true
 				}
 			],
 			"origin": "volitionRules",
@@ -325,8 +317,54 @@
 			"type": "volition"
 		},
 		{
-			"name": "People on drugs will show more love towards everyone",
+			"name": "People on drugs will show more love towards people they hate",
 			"conditions": [
+				{
+					"category": "statusLabel",
+					"type": "ondrug",
+					"first": "x",
+					"value": true
+				},
+				{
+					"category": "charLabel",
+					"type": "anyone",
+					"first": "y",
+					"value": true
+				},
+				{
+					"category": "feelingCategory",
+					"type": "bonding",
+					"first": "x",
+					"second": "y",
+					"value": 0,
+					"operator": "<"
+				}
+			],
+			"effects": [
+				{
+					"category": "feelingCategory",
+					"type": "bonding",
+					"first": "x",
+					"second": "y",
+					"weight": 10,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_13",
+			"type": "volition"
+		},
+		{
+			"name": "People on drugs will hate people they liked before",
+			"conditions": [
+				{
+					"category": "feelingCategory",
+					"type": "bonding",
+					"first": "x",
+					"second": "y",
+					"value": 0,
+					"operator": ">"
+				},
 				{
 					"category": "statusLabel",
 					"type": "ondrug",
@@ -346,12 +384,12 @@
 					"type": "bonding",
 					"first": "x",
 					"second": "y",
-					"weight": 10,
+					"weight": -10,
 					"intentType": true
 				}
 			],
 			"origin": "volitionRules",
-			"id": "volitionRules_13",
+			"id": "volitionRules_15",
 			"type": "volition"
 		}
 	]

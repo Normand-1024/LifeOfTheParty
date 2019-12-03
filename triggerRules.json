@@ -24,34 +24,12 @@
 					"category": "charAttributes",
 					"type": "ondrug",
 					"first": "x",
-					"value": 1,
-					"operator": "-"
+					"value": 0,
+					"operator": "="
 				}
 			],
 			"origin": "TriggerRules",
 			"id": "triggerRules_1",
-			"type": "trigger"
-		},
-		{
-			"name": "If x is on drugs, they will be on drugs for some time",
-			"conditions": [
-				{
-					"category": "statusLabel",
-					"type": "ondrug",
-					"first": "x",
-					"value": true
-				}
-			],
-			"effects": [
-				{
-					"category": "charAttributes",
-					"type": "ondrug",
-					"first": "x",
-					"value": 3
-				}
-			],
-			"origin": "TriggerRules",
-			"id": "triggerRules_15",
 			"type": "trigger"
 		}
 	]
