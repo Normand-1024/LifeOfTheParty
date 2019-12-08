@@ -72,9 +72,15 @@
   		"category": "statusLabel",
   		"type": "ondrug",
   		"intentType": true,
-  		"first": "initiator",
-  		"second": "responder"
-  	}],
+  		"first": "responder"
+  	},{
+		"category": "interactionRecord",
+		"type": "timescomplimented",
+		"first": "initiator",
+		"second": "responder",
+		"operator": "<",
+		"value": 5
+	}],
   	"influenceRules": [],
   	"effects": [{
   	  "category": "feelingCategory",
@@ -90,7 +96,14 @@
       "second": "responder",
       "operator": "+",
       "value": 30
-  	}]
+  	},{
+      "category": "interactionRecord",
+      "type": "timescomplimented",
+      "first": "initiator",
+      "second": "responder",
+      "operator": "+",
+      "value": 1
+    }]
   },
   {
     "name": "complimentSuccess",
@@ -101,7 +114,14 @@
     	"second": "responder",
     	"operator": ">",
     	"value": -1
-    }],
+    },{
+		"category": "interactionRecord",
+		"type": "timescomplimented",
+		"first": "initiator",
+		"second": "responder",
+		"operator": "<",
+		"value": 5
+	}],
     "influenceRules": [],
     "effects": [{
       "category": "feelingCategory",
@@ -117,6 +137,13 @@
       "second": "responder",
       "operator": "+",
       "value": 10
+    },{
+      "category": "interactionRecord",
+      "type": "timescomplimented",
+      "first": "initiator",
+      "second": "responder",
+      "operator": "+",
+      "value": 1
     }]
   },
   {
@@ -128,7 +155,14 @@
     	"second": "responder",
     	"operator": "<",
     	"value": 0
-    }],
+    },{
+		"category": "interactionRecord",
+		"type": "timescomplimented",
+		"first": "initiator",
+		"second": "responder",
+		"operator": "<",
+		"value": 5
+	}],
     "influenceRules": [],
     "effects": [{
       "category": "feelingCategory",

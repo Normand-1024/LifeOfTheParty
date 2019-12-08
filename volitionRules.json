@@ -3,7 +3,7 @@
 	"type": "volition",
 	"rules": [
 		{
-			"name": "Non-enemies generally want to be friends",
+			"name": "Non-enemies generally want to become friends, but they won't want to get too intimate",
 			"conditions": [
 				{
 					"category": "feelingCategory",
@@ -12,6 +12,14 @@
 					"second": "y",
 					"operator": ">",
 					"value": -1
+				},
+				{
+					"category": "feelingCategory",
+					"type": "bonding",
+					"first": "x",
+					"second": "y",
+					"value": 30,
+					"operator": "<"
 				}
 			],
 			"effects": [
@@ -68,42 +76,27 @@
 			"type": "volition"
 		},
 		{
-			"name": "BFFs will want to get drunk together",
+			"name": "Jesse always wants to increase bonding with others",
 			"conditions": [
 				{
-					"category": "feelingCategory",
-					"type": "bonding",
-					"first": "x",
-					"second": "y",
-					"value": 50,
-					"operator": ">"
-				},
-				{
-					"category": "charAttributes",
-					"type": "drunkenness",
-					"first": "y",
-					"value": 70,
-					"operator": ">"
-				},
-				{
-					"category": "charAttributes",
-					"type": "drunkenness",
-					"first": "x",
-					"value": 70,
-					"operator": "<"
+					"category": "charLabel",
+					"type": "jesse",
+					"first": "someone",
+					"value": true
 				}
 			],
 			"effects": [
 				{
-					"category": "charAttributes",
-					"type": "drunkenness",
-					"first": "x",
-					"weight": 7,
+					"category": "feelingCategory",
+					"type": "bonding",
+					"first": "someone",
+					"second": "other",
+					"weight": 10,
 					"intentType": true
 				}
 			],
 			"origin": "volitionRules",
-			"id": "volitionRules_4",
+			"id": "volitionRules_15",
 			"type": "volition"
 		},
 		{
@@ -115,6 +108,12 @@
 					"first": "x",
 					"value": 30,
 					"operator": ">"
+				},
+				{
+					"category": "charLabel",
+					"type": "anyone",
+					"first": "y",
+					"value": true
 				}
 			],
 			"effects": [
@@ -132,14 +131,27 @@
 			"type": "volition"
 		},
 		{
-			"name": "People like other people even more if they're drunk",
+			"name": "People on drugs will hate people they liked before",
 			"conditions": [
 				{
-					"category": "charAttributes",
-					"type": "drunkenness",
+					"category": "feelingCategory",
+					"type": "bonding",
 					"first": "x",
-					"value": 70,
+					"second": "y",
+					"value": 0,
 					"operator": ">"
+				},
+				{
+					"category": "statusLabel",
+					"type": "ondrug",
+					"first": "x",
+					"value": true
+				},
+				{
+					"category": "charLabel",
+					"type": "anyone",
+					"first": "y",
+					"value": true
 				}
 			],
 			"effects": [
@@ -148,12 +160,12 @@
 					"type": "bonding",
 					"first": "x",
 					"second": "y",
-					"weight": 3,
+					"weight": -10,
 					"intentType": true
 				}
 			],
 			"origin": "volitionRules",
-			"id": "volitionRules_6",
+			"id": "volitionRules_14",
 			"type": "volition"
 		},
 		{
@@ -344,68 +356,6 @@
 			],
 			"origin": "volitionRules",
 			"id": "volitionRules_13",
-			"type": "volition"
-		},
-		{
-			"name": "People on drugs will hate people they liked before",
-			"conditions": [
-				{
-					"category": "feelingCategory",
-					"type": "bonding",
-					"first": "x",
-					"second": "y",
-					"value": 0,
-					"operator": ">"
-				},
-				{
-					"category": "statusLabel",
-					"type": "ondrug",
-					"first": "x",
-					"value": true
-				},
-				{
-					"category": "charLabel",
-					"type": "anyone",
-					"first": "y",
-					"value": true
-				}
-			],
-			"effects": [
-				{
-					"category": "feelingCategory",
-					"type": "bonding",
-					"first": "x",
-					"second": "y",
-					"weight": -10,
-					"intentType": true
-				}
-			],
-			"origin": "volitionRules",
-			"id": "volitionRules_14",
-			"type": "volition"
-		},
-		{
-			"name": "Jesse always wants to increase bonding with others",
-			"conditions": [
-				{
-					"category": "charLabel",
-					"type": "jesse",
-					"first": "someone",
-					"value": true
-				}
-			],
-			"effects": [
-				{
-					"category": "feelingCategory",
-					"type": "bonding",
-					"first": "someone",
-					"second": "other",
-					"weight": 10,
-					"intentType": true
-				}
-			],
-			"origin": "volitionRules",
-			"id": "volitionRules_15",
 			"type": "volition"
 		}
 	]
