@@ -383,6 +383,30 @@
 			"origin": "volitionRules",
 			"id": "volitionRules_14",
 			"type": "volition"
+		},
+		{
+			"name": "Jesse always wants to increase bonding with others",
+			"conditions": [
+				{
+					"category": "charLabel",
+					"type": "jesse",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "feelingCategory",
+					"type": "bonding",
+					"first": "someone",
+					"second": "other",
+					"weight": 10,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_15",
+			"type": "volition"
 		}
 	]
 }

@@ -66,11 +66,44 @@
     },
     "conditions" : [],
     "influenceRules" : [],
-    "leadsTo" : ["compliment"]
+    "leadsTo" : ["complimentOnDrug", "complimentSuccess", "complimentFail"]
   },
   {
-    "name" : "compliment",
-    "conditions": [],
+  	"name": "complimentOnDrug",
+  	"conditions": [{
+  		"category": "statusLabel",
+  		"type": "ondrug",
+  		"intentType": true,
+  		"first": "initiator",
+  		"second": "responder"
+  	}],
+  	"influenceRules": [],
+  	"effects": [{
+  	  "category": "feelingCategory",
+      "type": "bonding",
+      "first": "responder",
+      "second": "initiator",
+      "operator": "+",
+      "value": 30
+    },{
+      "category": "feelingCategory",
+      "type": "bonding",
+      "first": "initiator",
+      "second": "responder",
+      "operator": "+",
+      "value": 30
+  	}]
+  },
+  {
+    "name": "complimentSuccess",
+    "conditions": [{
+    	"category": "feelingCategory",
+    	"type": "bonding",
+    	"first": "initiator",
+    	"second": "responder",
+    	"operator": ">",
+    	"value": -1
+    }],
     "influenceRules": [],
     "effects": [{
       "category": "feelingCategory",
@@ -78,17 +111,43 @@
       "first": "responder",
       "second": "initiator",
       "operator": "+",
-      "value": 20
+      "value": 10
     },{
       "category": "feelingCategory",
       "type": "bonding",
       "first": "initiator",
       "second": "responder",
       "operator": "+",
-      "value": 20
+      "value": 10
     }]
   },
-
+  {
+    "name" : "complimentFail",
+    "conditions": [{
+    	"category": "feelingCategory",
+    	"type": "bonding",
+    	"first": "initiator",
+    	"second": "responder",
+    	"operator": "<",
+    	"value": 0
+    }],
+    "influenceRules": [],
+    "effects": [{
+      "category": "feelingCategory",
+      "type": "bonding",
+      "first": "responder",
+      "second": "initiator",
+      "operator": "-",
+      "value": 10
+    },{
+      "category": "feelingCategory",
+      "type": "bonding",
+      "first": "initiator",
+      "second": "responder",
+      "operator": "-",
+      "value": 10
+    }]
+  },
   {
     "name" : "PERSUADETODRINK",
     "intent" : {
@@ -169,7 +228,7 @@
     	"first": "initiator",
     	"second": "responder",
     	"operator": ">",
-    	"value": 39
+    	"value": 9
     }],
     "influenceRules": [],
     "effects": [{
@@ -195,7 +254,7 @@
     	"first": "initiator",
     	"second": "responder",
     	"operator": "<",
-    	"value": 40
+    	"value": 10
     }],
     "influenceRules": [],
     "effects": [{
