@@ -24,7 +24,6 @@
       "value": 20
     }]
   },
-
   {
     "name": "GETHIGH",
     "intent": {
@@ -54,7 +53,6 @@
       "value": 1
     }]
   },
-
   {
     "name" : "RAISEFEELING",
     "intent" : {
@@ -264,6 +262,20 @@
       "second": "responder",
       "operator": "+",
       "value": 1
+    },{
+      "category": "feelingCategory",
+      "type": "bonding",
+      "first": "responder",
+      "second": "initiator",
+      "operator": "-",
+      "value": 5
+    },{
+      "category": "feelingCategory",
+      "type": "bonding",
+      "first": "initiator",
+      "second": "responder",
+      "operator": "-",
+      "value": 5
     }]
   }
 ]}
