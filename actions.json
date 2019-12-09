@@ -246,7 +246,7 @@
     	"first": "initiator",
     	"second": "responder",
     	"operator": ">",
-    	"value": 9
+    	"value": 19
     }],
     "influenceRules": [],
     "effects": [{
@@ -272,7 +272,7 @@
     	"first": "initiator",
     	"second": "responder",
     	"operator": "<",
-    	"value": 10
+    	"value": 20
     }],
     "influenceRules": [],
     "effects": [{
