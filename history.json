@@ -6,76 +6,148 @@
 			"type" : "anyone",
 			"first" : "Jesse",
 			"value" : true
-				},{
+		},{
 			"category" : "charLabel",
 			"type" : "anyone",
 			"first" : "Rowan",
 			"value" : true
-				},{
+		},{
 			"category" : "charLabel",
 			"type" : "anyone",
 			"first" : "Chad",
 			"value" : true
-				},{
+		},{
 			"category" : "charLabel",
 			"type" : "anyone",
 			"first" : "Stacy",
 			"value" : true
-				},{
+		},{
 			"category" : "charLabel",
 			"type" : "anyone",
 			"first" : "Alan",
 			"value" : true
-				},{
+		},{
 			"category" : "charLabel",
 			"type" : "jesse",
 			"first" : "Jesse",
 			"value" : true
-				},{
+		},{
 			"category" : "charLabel",
 			"type" : "rowan",
 			"first" : "Rowan",
 			"value" : true
-				},{
+		},{
 			"category" : "charLabel",
 			"type" : "chad",
 			"first" : "Chad",
 			"value" : true
-				},{
+		},{
 			"category" : "charLabel",
 			"type" : "stacy",
 			"first" : "Stacy",
 			"value" : true
-				},{
+		},{
 			"category" : "charLabel",
 			"type" : "alan",
 			"first" : "Alan",
 			"value" : true
-				},{
+		},{
 			"category" : "charAttributes",
 			"type" : "drunkenness",
 			"first" : "Jesse",
 			"value" : 0
-				},{
+		},{
 			"category" : "charAttributes",
 			"type" : "drunkenness",
 			"first" : "Rowan",
 			"value" : 0
-				},{
+		},{
 			"category" : "charAttributes",
 			"type" : "drunkenness",
 			"first" : "Chad",
 			"value" : 0
-				},{
+		},{
 			"category" : "charAttributes",
 			"type" : "drunkenness",
 			"first" : "Stacy",
 			"value" : 0
-				},{
+		},{
 			"category" : "charAttributes",
 			"type" : "drunkenness",
 			"first" : "Alan",
 			"value" : 0
-			}
-		]}
+		},{
+			"category" : "feelingCategory",
+			"type": "bonding",
+			"first": "Jesse",
+			"second": "Rowan",
+			"value": 50
+		},{
+			"category" : "feelingCategory",
+			"type": "bonding",
+			"first": "Rowan",
+			"second": "Jesse",
+			"value": 50
+		},{
+			"category" : "feelingCategory",
+			"type": "bonding",
+			"first": "Jesse",
+			"second": "Stacy",
+			"value": -30
+		},{
+			"category" : "feelingCategory",
+			"type": "bonding",
+			"first": "Stacy",
+			"second": "Jesse",
+			"value": -30
+		},{
+			"category" : "feelingCategory",
+			"type": "bonding",
+			"first": "Jesse",
+			"second": "Chad",
+			"value": -10
+		},{
+			"category" : "feelingCategory",
+			"type": "bonding",
+			"first": "Chad",
+			"second": "Jesse",
+			"value": -10
+		},{
+			"category" : "feelingCategory",
+			"type": "bonding",
+			"first": "Stacy",
+			"second": "Chad",
+			"value": 40
+		},{
+			"category" : "feelingCategory",
+			"type": "bonding",
+			"first": "Chad",
+			"second": "Stacy",
+			"value": 40
+		},{
+			"category" : "feelingCategory",
+			"type": "bonding",
+			"first": "Alan",
+			"second": "Chad",
+			"value": 10
+		},{
+			"category" : "feelingCategory",
+			"type": "bonding",
+			"first": "Chad",
+			"second": "Alan",
+			"value": 10
+		},{
+			"category" : "feelingCategory",
+			"type": "bonding",
+			"first": "Alan",
+			"second": "Rowan",
+			"value": 30
+		},{
+			"category" : "feelingCategory",
+			"type": "bonding",
+			"first": "Rowan",
+			"second": "Alan",
+			"value": 30
+		}
+	]}
 ]}

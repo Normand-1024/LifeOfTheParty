@@ -73,14 +73,7 @@
   		"type": "ondrug",
   		"intentType": true,
   		"first": "responder"
-  	},{
-		"category": "interactionRecord",
-		"type": "timescomplimented",
-		"first": "initiator",
-		"second": "responder",
-		"operator": "<",
-		"value": 5
-	}],
+  	}],
   	"influenceRules": [],
   	"effects": [{
   	  "category": "feelingCategory",
@@ -96,14 +89,7 @@
       "second": "responder",
       "operator": "+",
       "value": 30
-  	},{
-      "category": "interactionRecord",
-      "type": "timescomplimented",
-      "first": "initiator",
-      "second": "responder",
-      "operator": "+",
-      "value": 1
-    }]
+  	}]
   },
   {
     "name": "complimentSuccess",
