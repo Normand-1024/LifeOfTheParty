@@ -69,10 +69,11 @@
   {
   	"name": "complimentOnDrug",
   	"conditions": [{
-  		"category": "statusLabel",
+  		"category": "charAttributes",
   		"type": "ondrug",
-  		"intentType": true,
-  		"first": "responder"
+  		"first": "responder",
+  		"operator": ">",
+  		"value": 0
   	}],
   	"influenceRules": [],
   	"effects": [{
@@ -94,6 +95,12 @@
   {
     "name": "complimentSuccess",
     "conditions": [{
+  		"category": "charAttributes",
+  		"type": "ondrug",
+  		"first": "responder",
+  		"operator": "<",
+  		"value": 1
+  	},{
     	"category": "feelingCategory",
     	"type": "bonding",
     	"first": "initiator",
@@ -106,7 +113,7 @@
 		"first": "initiator",
 		"second": "responder",
 		"operator": "<",
-		"value": 5
+		"value": 2
 	}],
     "influenceRules": [],
     "effects": [{
@@ -135,6 +142,12 @@
   {
     "name" : "complimentFail",
     "conditions": [{
+  		"category": "charAttributes",
+  		"type": "ondrug",
+  		"first": "responder",
+  		"operator": "<",
+  		"value": 1
+  	},{
     	"category": "feelingCategory",
     	"type": "bonding",
     	"first": "initiator",
@@ -147,7 +160,7 @@
 		"first": "initiator",
 		"second": "responder",
 		"operator": "<",
-		"value": 5
+		"value": 2
 	}],
     "influenceRules": [],
     "effects": [{
