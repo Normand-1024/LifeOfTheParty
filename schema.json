@@ -14,21 +14,6 @@
 			"minValue": -100
 		},
 		{
-			"actionable": true,
-			"directionType": "undirected",
-			"isBoolean": true,
-			"cloneEachTimeStep": true,
-			"duration": 3,
-			"category": "statusLabel",
-			"types": [
-				"interacted",
-				"ondrug",
-				"persuadedtodrink",
-				"persuadedtogethigh"
-			],
-			"defaultValue": false
-		},
-		{
 			"actionable": false,
 			"directionType": "undirected",
 			"isBoolean": true,
@@ -46,21 +31,6 @@
 		},
 		{
 			"actionable": true,
-			"directionType": "undirected",
-			"isBoolean": false,
-			"cloneEachTimeStep": true,
-			"category": "charAttributes",
-			"types": [
-				"fame",
-				"drunkenness",
-				"ondrug"
-			],
-			"defaultValue": 0,
-			"maxValue": 100,
-			"minValue": 0
-		},
-		{
-			"actionable": true,
 			"directionType": "directed",
 			"isBoolean": false,
 			"cloneEachTimeStep": true,
@@ -72,6 +42,36 @@
 			],
 			"defaultValue": 0,
 			"maxValue": 5,
+			"minValue": 0
+		},
+		{
+			"actionable": true,
+			"directionType": "undirected",
+			"isBoolean": true,
+			"cloneEachTimeStep": true,
+			"duration": 100,
+			"category": "statusLabel",
+			"types": [
+				"interacted",
+				"ondrug",
+				"persuadedtodrink",
+				"persuadedtogethigh"
+			],
+			"defaultValue": false
+		},
+		{
+			"actionable": true,
+			"directionType": "undirected",
+			"isBoolean": false,
+			"cloneEachTimeStep": true,
+			"category": "charAttributes",
+			"types": [
+				"fame",
+				"drunkenness",
+				"ondrug"
+			],
+			"defaultValue": 0,
+			"maxValue": 100,
 			"minValue": 0
 		}
 	]
