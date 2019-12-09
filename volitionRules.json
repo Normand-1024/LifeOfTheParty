@@ -176,6 +176,13 @@
 					"type": "persuadedtodrink",
 					"first": "someone",
 					"value": true
+				},
+				{
+					"category": "charAttributes",
+					"type": "drunkenness",
+					"first": "someone",
+					"value": 40,
+					"operator": "<"
 				}
 			],
 			"effects": [
@@ -199,6 +206,12 @@
 					"type": "persuadedtogethigh",
 					"first": "someone",
 					"value": true
+				},
+				{
+					"category": "statusLabel",
+					"type": "ondrug",
+					"first": "someone",
+					"value": false
 				}
 			],
 			"effects": [
@@ -230,6 +243,12 @@
 					"type": "ondrug",
 					"first": "other",
 					"value": true
+				},
+				{
+					"category": "statusLabel",
+					"type": "ondrug",
+					"first": "someone",
+					"value": false
 				}
 			],
 			"effects": [
@@ -242,7 +261,7 @@
 				}
 			],
 			"origin": "volitionRules",
-			"id": "volitionRules_13",
+			"id": "volitionRules_9",
 			"type": "volition"
 		},
 		{
@@ -265,7 +284,7 @@
 				}
 			],
 			"origin": "volitionRules",
-			"id": "volitionRules_12",
+			"id": "volitionRules_10",
 			"type": "volition"
 		},
 		{
@@ -312,7 +331,7 @@
 				}
 			],
 			"origin": "volitionRules",
-			"id": "volitionRules_14",
+			"id": "volitionRules_12",
 			"type": "volition"
 		},
 		{
@@ -336,7 +355,30 @@
 				}
 			],
 			"origin": "volitionRules",
-			"id": "volitionRules_15",
+			"id": "volitionRules_13",
+			"type": "volition"
+		},
+		{
+			"name": "If someone has nothing else to do, they will do drugs",
+			"conditions": [
+				{
+					"category": "charLabel",
+					"type": "anyone",
+					"first": "x",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "charAttributes",
+					"type": "ondrug",
+					"first": "x",
+					"weight": 1,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_14",
 			"type": "volition"
 		}
 	]
