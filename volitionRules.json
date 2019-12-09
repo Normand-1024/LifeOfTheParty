@@ -44,14 +44,14 @@
 					"type": "bonding",
 					"first": "x",
 					"second": "y",
-					"value": 30,
+					"value": 29,
 					"operator": ">"
 				},
 				{
 					"category": "charAttributes",
 					"type": "drunkenness",
 					"first": "y",
-					"value": 30,
+					"value": 29,
 					"operator": ">"
 				},
 				{
@@ -165,7 +165,7 @@
 				}
 			],
 			"origin": "volitionRules",
-			"id": "volitionRules_13",
+			"id": "volitionRules_6",
 			"type": "volition"
 		},
 		{
@@ -318,6 +318,37 @@
 			],
 			"origin": "volitionRules",
 			"id": "volitionRules_12",
+			"type": "volition"
+		},
+		{
+			"name": "Friends do drugs together",
+			"conditions": [
+				{
+					"category": "feelingCategory",
+					"type": "bonding",
+					"first": "someone",
+					"second": "other",
+					"value": 29,
+					"operator": ">"
+				},
+				{
+					"category": "statusLabel",
+					"type": "ondrug",
+					"first": "other",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "charAttributes",
+					"type": "ondrug",
+					"first": "someone",
+					"weight": 5,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_14",
 			"type": "volition"
 		}
 	]
