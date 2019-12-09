@@ -215,112 +215,6 @@
 			"type": "volition"
 		},
 		{
-			"name": "Jesse can persuade others to drink",
-			"conditions": [
-				{
-					"category": "charLabel",
-					"type": "jesse",
-					"first": "someone",
-					"value": true
-				},
-				{
-					"category": "charLabel",
-					"type": "anyone",
-					"first": "other",
-					"value": true
-				}
-			],
-			"effects": [
-				{
-					"category": "interactionRecord",
-					"type": "timespersuadedtodrink",
-					"first": "someone",
-					"second": "other",
-					"weight": 5,
-					"intentType": true
-				}
-			],
-			"origin": "volitionRules",
-			"id": "volitionRules_9",
-			"type": "volition"
-		},
-		{
-			"name": "Jesse can persuade others to get high",
-			"conditions": [
-				{
-					"category": "charLabel",
-					"type": "jesse",
-					"first": "someone",
-					"value": true
-				},
-				{
-					"category": "charLabel",
-					"type": "anyone",
-					"first": "other",
-					"value": true
-				}
-			],
-			"effects": [
-				{
-					"category": "interactionRecord",
-					"type": "timespersuadedtododrug",
-					"first": "someone",
-					"second": "other",
-					"weight": 5,
-					"intentType": true
-				}
-			],
-			"origin": "volitionRules",
-			"id": "volitionRules_10",
-			"type": "volition"
-		},
-		{
-			"name": "Jesse can drink",
-			"conditions": [
-				{
-					"category": "charLabel",
-					"type": "jesse",
-					"first": "someone",
-					"value": true
-				}
-			],
-			"effects": [
-				{
-					"category": "charAttributes",
-					"type": "drunkenness",
-					"first": "someone",
-					"weight": 5,
-					"intentType": true
-				}
-			],
-			"origin": "volitionRules",
-			"id": "volitionRules_11",
-			"type": "volition"
-		},
-		{
-			"name": "Jesse can do drugs",
-			"conditions": [
-				{
-					"category": "charLabel",
-					"type": "jesse",
-					"first": "someone",
-					"value": true
-				}
-			],
-			"effects": [
-				{
-					"category": "charAttributes",
-					"type": "ondrug",
-					"first": "someone",
-					"weight": 5,
-					"intentType": true
-				}
-			],
-			"origin": "volitionRules",
-			"id": "volitionRules_12",
-			"type": "volition"
-		},
-		{
 			"name": "Friends do drugs together",
 			"conditions": [
 				{
@@ -348,7 +242,101 @@
 				}
 			],
 			"origin": "volitionRules",
+			"id": "volitionRules_13",
+			"type": "volition"
+		},
+		{
+			"name": "Jesse can do drugs",
+			"conditions": [
+				{
+					"category": "charLabel",
+					"type": "jesse",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "charAttributes",
+					"type": "ondrug",
+					"first": "someone",
+					"weight": 5,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_12",
+			"type": "volition"
+		},
+		{
+			"name": "Jesse can drink",
+			"conditions": [
+				{
+					"category": "charLabel",
+					"type": "jesse",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "charAttributes",
+					"type": "drunkenness",
+					"first": "someone",
+					"weight": 5,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_11",
+			"type": "volition"
+		},
+		{
+			"name": "Jesse can persuade people to do drugs",
+			"conditions": [
+				{
+					"category": "charLabel",
+					"type": "jesse",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "interactionRecord",
+					"type": "timespersuadedtododrug",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
 			"id": "volitionRules_14",
+			"type": "volition"
+		},
+		{
+			"name": "Jesse can persuade people to drink",
+			"conditions": [
+				{
+					"category": "charLabel",
+					"type": "jesse",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"category": "interactionRecord",
+					"type": "timespersuadedtodrink",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentType": true
+				}
+			],
+			"origin": "volitionRules",
+			"id": "volitionRules_15",
 			"type": "volition"
 		}
 	]

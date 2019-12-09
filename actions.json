@@ -81,14 +81,14 @@
       "first": "responder",
       "second": "initiator",
       "operator": "+",
-      "value": 30
+      "value": 60
     },{
       "category": "feelingCategory",
       "type": "bonding",
       "first": "initiator",
       "second": "responder",
       "operator": "+",
-      "value": 30
+      "value": 60
   	}]
   },
   {
@@ -115,14 +115,14 @@
       "first": "responder",
       "second": "initiator",
       "operator": "+",
-      "value": 10
+      "value": 20
     },{
       "category": "feelingCategory",
       "type": "bonding",
       "first": "initiator",
       "second": "responder",
       "operator": "+",
-      "value": 10
+      "value": 20
     },{
       "category": "interactionRecord",
       "type": "timescomplimented",
